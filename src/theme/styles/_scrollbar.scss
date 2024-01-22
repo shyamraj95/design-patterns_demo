@@ -1,0 +1,19 @@
+  /* ************** scrollbar *****************/
+/* Works on Firefox */
+* {
+  scrollbar-color: rgba(109, 105, 105, 0.747)  transparent;
+}
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-clip: content-box;
+    background-color: rgba(109, 105, 105, 0.747);
+  }

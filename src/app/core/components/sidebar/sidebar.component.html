@@ -1,0 +1,80 @@
+<div class="wrapper">
+  <header class="header">
+    <button class="back_btn" (click)="toggleSearchBox()">
+      <svg-icon icon="arrow_back"></svg-icon>
+    </button>
+    <button class="menu" (click)="toggleSideMenu('toggleButton')">
+      <svg-icon icon="menu"></svg-icon>
+    </button>
+    <div class="logo">
+      <img src="/assets/images/exatech-logo.png" alt="logo" title="Logo">
+    </div>
+
+    <div class="search">
+      <input type="text" name="search" placeholder="Search" />
+      <button class="search_btn" (click)="toggleSearchBox()">
+        <svg-icon icon="search"></svg-icon>
+      </button>
+    </div>
+
+    <button class="search_btn" (click)="toggleSearchBox()">
+      <svg-icon icon="search"></svg-icon>
+    </button>
+    <button class="notifications">
+      <svg-icon icon="notifications"></svg-icon>
+    </button>
+    <!--     @if (authService.isAuthenticated$ | async) {
+      <button *ngIf="authService.isAuthenticated$ | async" class="logout" (click)="logout()">
+        <svg-icon icon="logout"></svg-icon>
+      </button>
+    } -->
+
+  </header>
+  <aside class="sidebar">
+    @for (sidebarItem of sidebarItems; track $index) {
+    <ul (click)="toggleSideMenu('links')">
+      @if (!sidebarItem?.groupTitle){
+      <ng-container>
+        @for (menus of sidebarItem.menus; track $index) {
+        <li routerLink={{menus.path}}>
+          <svg-icon icon={{menus.icon}}></svg-icon>
+          {{menus.pathName}}
+        </li>
+      }
+      </ng-container>
+      }
+      @if (sidebarItem?.groupTitle){
+      <span class="title">
+        <svg-icon icon="{{sidebarItem.icon}}"></svg-icon>{{sidebarItem.groupTitle}}
+      </span>
+      }
+      @if (sidebarItem?.groupTitle){
+      <ng-container>
+        @for (submenu of sidebarItem.menus; track $index) {
+        <li routerLink={{submenu.path}}>
+          <svg-icon icon={{submenu.icon}}></svg-icon>
+          {{submenu.pathName}}
+        </li>
+        }
+      </ng-container>
+      }
+    </ul>
+  }
+  </aside>
+  <aside class="sidebar_small">
+    @for (sidebarItem of sidebarItems; track $index) {
+      <ul>
+        @for (menus of sidebarItem.menus; track $index) {
+        <li routerLink={{menus.path}}>
+          <svg-icon icon={{menus.icon}}></svg-icon>
+          {{menus.pathName}}
+        </li>
+      }
+      </ul> 
+    }
+    <!--     -->
+  </aside>
+  <section class="main-content" (click)="toggleSideMenu('body')">
+    <ng-content></ng-content>
+  </section>
+</div>

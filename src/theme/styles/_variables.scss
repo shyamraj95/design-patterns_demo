@@ -1,0 +1,112 @@
+// custom-variables Variables
+//
+
+// left-sidebar start //
+//
+// Left sidebar Background 
+$bg-sidebar: #ffffff;
+$sidebar-iconopacity: 0.65;
+$sidebar-letterspace:  0.02rem;
+$sidebar-box-shadow:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+$sm-sidebar-box-shadow:rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+// side width
+$sidebar-width: 240px;
+$sidebar-small-width: 70px;
+$bg-sidebar-small: #ffffff;
+//Menu item
+$bg-menu-item: #4b4b5a;
+$submenu-title-border: 1px solid #0000001a;
+$menu-text-color:black;
+$menu-item-hover: #00000010;;
+$menu-item-active: #0000001a;
+$bg-submenu: #4b4b5a;
+$menu-item-size: 0.95rem;
+$menu-submenu-size: 0.875rem;
+$search-bordercolor:#ccc;
+$buttonwidth: 40px;
+
+// Header Background
+$bg-header: #ffffff;
+$header-box-shadow:rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+$header-height: 52px;
+$bg-search-button:#f8f8f8;
+
+
+
+// Input light gray
+$input-light-bg: #f3f7f9;
+
+// button
+$btn-soft-bg-opacity: 0.15;
+
+// Chat widget
+$chat-primary-user-bg: #fef5e4;
+$chat-secondary-user-bg: #f1f3fa;
+
+// landing section bg
+$section-bg: #ffffff;
+
+// scss-docs-start color-variables
+$blue: #5369f8;
+$gray: #808080;
+$indigo: #564ab1;
+$purple: #6f42c1;
+$pink: #e83e8c;
+$red: #ff5c75;
+$orange: #f77e53;
+$yellow: #ffbe0b;
+$green: #43d39e;
+$teal: #1ce1ac;
+$cyan: #25c2e3;
+$white:white;
+
+
+// scss-docs-start theme-color-variables
+$primary: $blue;
+$secondary: $gray;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray;
+$dark: $gray;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+// Style anchor elements.
+
+$link-color: $primary;
+$link-decoration: none;
+$link-shade-percentage: 15%;
+$link-hover-color: darken($link-color, $link-shade-percentage);
+$link-hover-decoration: none;
+
+$stretched-link-pseudo-element: after;
+$stretched-link-z-index: 1;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
