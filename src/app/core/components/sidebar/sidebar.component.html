@@ -37,7 +37,9 @@
       <ng-container>
         @for (menus of sidebarItem.menus; track $index) {
         <li routerLink={{menus.path}}>
+          @defer () {
           <svg-icon icon={{menus.icon}}></svg-icon>
+          }
           {{menus.pathName}}
         </li>
       }
@@ -52,7 +54,9 @@
       <ng-container>
         @for (submenu of sidebarItem.menus; track $index) {
         <li routerLink={{submenu.path}}>
+          @defer () {
           <svg-icon icon={{submenu.icon}}></svg-icon>
+          }
           {{submenu.pathName}}
         </li>
         }
@@ -66,7 +70,9 @@
       <ul>
         @for (menus of sidebarItem.menus; track $index) {
         <li routerLink={{menus.path}}>
+          @defer () {
           <svg-icon icon={{menus.icon}}></svg-icon>
+          }
           {{menus.pathName}}
         </li>
       }

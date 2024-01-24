@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+https://danielk.tech/home/angular-how-to-add-a-loading-spinner
+https://github.com/thisiszoaib/angular-confirm-dialog
+https://www.concretepage.com/angular-material/angular-material-dialog-ng-template
+https://danielk.tech/home/how-to-add-a-loading-spinner-to-an-angular-material-button-step-by-step-guide#own-solution

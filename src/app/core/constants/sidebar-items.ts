@@ -36,35 +36,35 @@ export const MenuItems: MenuItem[] = [
     roles: [Role.All],
     menus: [
       {
-        icon: "",
+        icon: "work",
         badge: "",
         pathName: "Case Schedule",
         path: "/dash/test",
         title: "Case Schedule"
       },
       {
-        icon: "",
+        icon: "logout",
         badge: "",
         pathName: "Delivered Goods",
         path: "",
         title: "Delivered Goods"
       },
       {
-        icon: "",
+        icon: "inventory",
         badge: "",
         pathName: "FAQ",
         path: "",
         title: "FAQ"
       },
       {
-        icon: "",
+        icon: "remove_red_eye",
         badge: "",
         pathName: "Loaner Forms",
         path: "",
         title: "Loaner Forms"
       },
       {
-        icon: "",
+        icon: "info",
         badge: "",
         pathName: "Hip",
         path: "",
@@ -79,14 +79,14 @@ export const MenuItems: MenuItem[] = [
     roles: [Role.All, Role.Admin, Role.User],
     menus: [
       {
-        icon: "",
+        icon: "arrow_back",
         badge: "",
         pathName: "Set Placement",
         path: "",
         title: "Set Placement"
       },
       {
-        icon: "",
+        icon: "inventory",
         badge: "",
         pathName: "Unassigned Inventory",
         path: "",
@@ -101,14 +101,14 @@ export const MenuItems: MenuItem[] = [
     roles: [Role.All, Role.Admin, Role.User],
     menus: [
       {
-        icon: "",
+        icon: "remove_red_eye",
         badge: "",
         pathName: "Expiring Items",
         path: "",
         title: "Expiring Items"
       },
       {
-        icon: "",
+        icon: "inventory",
         badge: "",
         pathName: "Items Number Inquiry",
         path: "",

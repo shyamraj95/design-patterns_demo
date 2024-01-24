@@ -138,7 +138,7 @@
 }
 
 .sidebar ul {
-    padding: 10px 0;
+    padding: 6px 0;
 }
 
 .sidebar .title {
@@ -157,7 +157,6 @@
     display: grid;
     grid-template-columns: 24px 1fr;
     grid-gap: 24px;
-    padding: 8px;
     align-items: center;
     padding: 10px 23px;
     cursor: pointer;
@@ -167,9 +166,9 @@
     background: $menu-item-hover;
 }
 
-.sidebar ul:first-of-type li:first-child {
+/* .sidebar ul:first-of-type li:first-child {
     background: $menu-item-active;
-}
+} */
 
 .sidebar ul li svg {
     opacity: $sidebar-iconopacity;
@@ -179,7 +178,7 @@
     display: none;
     background: $bg-sidebar-small;
     grid-area: "sidebar";
-    box-shadow: $sm-sidebar-box-shadow;
+    box-shadow: $sidebar-box-shadow;
     @extend .height;
 }
 

@@ -11,10 +11,10 @@ import { AsyncPipe } from '@angular/common';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss'],
   standalone: true,
-  imports:[SvgIconComponent,  RouterLink, AsyncPipe ]
+  imports: [SvgIconComponent, RouterLink, AsyncPipe]
 })
 export class SidebarComponent implements OnInit, OnDestroy {
-  sidebarItems: MenuItem[]= [];
+  sidebarItems: MenuItem[] = [];
 
   constructor(
 
@@ -22,7 +22,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
   ngOnInit() {
     const userRoles = ['All', 'Admin', 'User'];
     // let filteredRestaurants = MenuItems.filter(r => userRoles.every(f => r.roles?.includes(f))) match with full array string
-    this.sidebarItems = MenuItems.filter(a=>a.roles.some(a=>userRoles.includes(a)))
+    this.sidebarItems = MenuItems.filter(a => a.roles.some(a => userRoles.includes(a)))
   }
 
   toggleSearchBox() {
@@ -34,8 +34,11 @@ export class SidebarComponent implements OnInit, OnDestroy {
     }
   }
 
-  toggleSideMenu(event_from:any) {
-    const wrapper = document.querySelector('.wrapper')!.classList ; 
+  toggleSideMenu(event_from: any) {
+    const wrapper = document.querySelector('.wrapper')!.classList; 
+/*      if (event_from == 'body') {
+      wrapper.remove('menu_overlay');
+    } */
     if (window.matchMedia('(max-width: 1300px)').matches) {
       wrapper.remove('menu_small');
       if (wrapper.contains('menu_overlay')) {
